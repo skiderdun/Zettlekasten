@@ -117,3 +117,4 @@ class Database:
         return "Connection closed"
 
     def __str__(self):
+        return f"Database {self.database_name} created"
