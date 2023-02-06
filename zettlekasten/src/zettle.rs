@@ -9,7 +9,7 @@
 // 1. create a function to access the Crossref REST API to get Liturature Zettle citation data from a doi and return a citation vector
 // 2. create a function to break a string into a vector of words and return a vector of keywords
 
-mod Zettle {
+pub mod Zettle {
     use url;
     use url::{Url, ParseError};
 
@@ -92,5 +92,37 @@ mod Zettle {
             new_keywords
             }       
 
+        // function to remove duplicates from a vector of keywords
+        fn remove_duplicates(keywords: Vec<String>) -> Vec<String> {
+            let mut new_keywords: Vec<String> = Vec::new();
+            for word in keywords.iter() {
+                if !new_keywords.contains(word) {
+                    new_keywords.push(word.to_string());
+                    }
+                }
+            new_keywords
+            }
+        
+        // function to remove keywords that are too short
+        fn remove_short_keywords(keywords: Vec<String>) -> Vec<String> {
+            let mut new_keywords: Vec<String> = Vec::new();
+            for word in keywords.iter() {
+                if word.len() > 4 {
+                    new_keywords.push(word.to_string());
+                    }
+                }
+            new_keywords
+            }
+        
+        // public function to break a string into a vector of keywords
+        pub fn keywords(string: String) -> Vec<String> {
+            let keywords: Vec<String> = break_string(string);
+            let keywords: Vec<String> = remove_punctuation(keywords);
+            let keywords: Vec<String> = remove_stop_words(keywords);
+            let keywords: Vec<String> = remove_duplicates(keywords);
+            let keywords: Vec<String> = remove_short_keywords(keywords);
+            keywords
+            }
+        }
+
     }
-}
