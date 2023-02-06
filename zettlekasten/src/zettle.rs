@@ -7,7 +7,7 @@
 
 //ToDos:
 // 1. create a function to access the Crossref REST API to get Liturature Zettle citation data from a doi and return a citation vector
-// 2. create a function to break a string into a vector of words and return a vector of keywords
+
 
 pub mod Zettle {
     use url;
