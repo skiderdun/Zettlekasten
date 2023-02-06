@@ -1,14 +1,16 @@
 // module to handle keywords
 // Usage: zettlekasten::keywords::tags(:String) -> Vec<String>);
 
-// ToDos:
-// 1. create a fucntion that alows the user to add a new stop word to the stop word list
-// 2. create a function that alows the user to remove a stop word from the stop word list
-// 3. create a keyword struct that contains the keyword and the number of times it appears in the zettlekasten
-// 4. create a function that returns a vector of keyword structs sorted by the keyword
-// 6. create a function that allows the user to add a new keyword to the user-keyword list
-// 7. create a function that allows the user to remove a keyword from the user-keyword list
-// 5. create a vector of user defined keywords that are used to create the user-keyword list
+/*
+ToDos:
+1. create a fucntion that alows the user to add a new stop word to the stop word list
+2. create a function that alows the user to remove a stop word from the stop word list
+3. create a keyword struct that contains the keyword and the number of times it appears in the zettlekasten
+4. create a function that returns a vector of keyword structs sorted by the keyword
+6. create a function that allows the user to add a new keyword to the user-keyword list
+7. create a function that allows the user to remove a keyword from the user-keyword list
+5. create a vector of user defined keywords that are used to create the user-keyword list
+*/
 
 // public function to break a string into a vector of keywords
 pub fn tags(string: String) -> Vec<String> {
