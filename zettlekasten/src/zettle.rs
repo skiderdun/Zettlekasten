@@ -12,6 +12,7 @@
 pub mod zettle {
     use url;
     use url::{Url, ParseError};
+    use crate::keywords::tags;
 
     // liturature zettle struct
     pub struct LitZettle {
@@ -22,11 +23,13 @@ pub mod zettle {
         }
     
     // function to create a new liturature zettle
-    pub fn new_lit_zettle(citation: Vec<String>, doi: url::Url, quote: String, tags: Vec<String>) -> LitZettle {
+    pub fn new_lit_zettle(citation: Vec<String>, doi: url::Url, quote: String) -> LitZettle {
+        let quotes: &String = &quote;
+        let tags: Vec<String> = tags(quotes.to_string());
         LitZettle {
             citation: citation,
             doi: doi,
-            quote: quote,
+            quote: quotes.to_string(),
             tags: tags,
             }
         }
@@ -39,10 +42,12 @@ pub mod zettle {
         }
 
     // function to create a new permanent zettle
-    pub fn new_perm_zettle(title: String, content: String, tags: Vec<String>) -> PermZettle {
+    pub fn new_perm_zettle(title: String, content: String) -> PermZettle {
+        let contents: &String = &content;
+        let tags: Vec<String> = tags(contents.to_string());
         PermZettle {
             title: title,
-            content: content,
+            content: contents.to_string(),
             tags: tags,
             }
         }
