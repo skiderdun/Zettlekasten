@@ -1,0 +1,1 @@
+C:\Users\TOM\Zettlekasten\Zettlekasten\zettlekasten\target\debug\libzettlekasten.rlib: C:\Users\TOM\Zettlekasten\Zettlekasten\zettlekasten\src\keywords.rs C:\Users\TOM\Zettlekasten\Zettlekasten\zettlekasten\src\lib.rs C:\Users\TOM\Zettlekasten\Zettlekasten\zettlekasten\src\zettle.rs
