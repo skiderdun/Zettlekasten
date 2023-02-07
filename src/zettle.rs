@@ -11,7 +11,6 @@
 
 pub mod zettle {
     use url;
-    use url::{Url, ParseError};
     use crate::keywords::tags;
 
     // liturature zettle struct

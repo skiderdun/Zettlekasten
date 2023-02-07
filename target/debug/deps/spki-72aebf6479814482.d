@@ -1,0 +1,13 @@
+c:\Users\TOM\Zettlekasten\Zettlekasten\target\debug\deps\spki-72aebf6479814482.rmeta: C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\lib.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\algorithm.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\error.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\spki.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\traits.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\document.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\../README.md
+
+c:\Users\TOM\Zettlekasten\Zettlekasten\target\debug\deps\libspki-72aebf6479814482.rlib: C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\lib.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\algorithm.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\error.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\spki.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\traits.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\document.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\../README.md
+
+c:\Users\TOM\Zettlekasten\Zettlekasten\target\debug\deps\spki-72aebf6479814482.d: C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\lib.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\algorithm.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\error.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\spki.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\traits.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\document.rs C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\../README.md
+
+C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\lib.rs:
+C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\algorithm.rs:
+C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\error.rs:
+C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\spki.rs:
+C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\traits.rs:
+C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\document.rs:
+C:\Users\TOM\.cargo\registry\src\github.com-1ecc6299db9ec823\spki-0.5.4\src\../README.md:
