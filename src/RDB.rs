@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // relational database manager (RDB)
 // For now, it's just a wrapper around a HashMap
 // Later will be a wrapper around a SQLite database
@@ -7,9 +6,10 @@
 // RDB struct will also have methods to save and load the database to a file
 
 use std::collections::HashMap;
+use crate::in_out::read_lines;
 use std::fs::File;
-use std::io::prelude::*;
 use std::path::Path;
+use std::io::prelude::*;
 
 // RDB struct
 #[derive(Debug)]
@@ -49,24 +49,14 @@ impl RDB {
 
     // load the database from a file
     pub fn load(&mut self, filename: &str) {
-        let path = Path::new(filename);
-        let display = path.display();
-
-        let mut file = match File::open(&path) {
-            Err(why) => panic!("couldn't open {}: {}", display, why),
-            Ok(file) => file,
-        };
-
-        let mut s = String::new();
-        match file.read_to_string(&mut s) {
-            Err(why) => panic!("couldn't read {}: {}", display, why),
-            Ok(_) => println!("successfully read {}", display),
-        }
-
-        let lines: Vec<&str> = s.split("\r").collect();
+        let lines = read_lines(filename);
         for line in lines {
-            let pair: Vec<&str> = line.split(" ").collect();
-            self.db.insert(pair[0].to_string(), pair[1].to_string());
+            if let Ok(ip) = line {
+                let mut parts = ip.split_whitespace();
+                let key = parts.next().unwrap().to_string();
+                let value = parts.next().unwrap().to_string();
+                self.add(key, value);
+            }
         }
     }
 
@@ -81,23 +71,10 @@ impl RDB {
         };
 
         for (key, value) in &self.db {
-            let line = format!("{} {}\r ", key, value);
+            let line = format!("{} {}\r", key, value);
             match file.write_all(line.as_bytes()) {
                 Err(why) => panic!("couldn't write to {}: {}", display, why),
                 Ok(_) => println!("successfully wrote to {}", display),
             }
         }
     }}
-
-
-
-
-=======
-// relational database manager (rdb)
-// uses MYSQL as the backend
-// uses the sqlx crate
-
-use sqlx::MySql;
-use sqlx;
-
-// new database struct
