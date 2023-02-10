@@ -21,7 +21,7 @@ cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
 CRATE_CC_NO_DEFAULTS = None
 CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
 DEBUG = Some("true")
-running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DNULL_OVERLAPPED_WAKEUPS_PATCH" "-Foc:\\Users\\TOM\\Zettlekasten\\Zettlekasten\\target\\debug\\build\\wepoll-ffi-c7e11f811dd5de07\\out\\vendor/wepoll/wepoll.o" "-c" "vendor/wepoll/wepoll.c"
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DNULL_OVERLAPPED_WAKEUPS_PATCH" "-Foc:\\Users\\tommyw\\Zettlekasten\\Zettlekasten\\target\\debug\\build\\wepoll-ffi-c7e11f811dd5de07\\out\\vendor/wepoll/wepoll.o" "-c" "vendor/wepoll/wepoll.c"
 wepoll.c
 exit code: 0
 cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
@@ -40,7 +40,7 @@ cargo:rerun-if-env-changed=HOST_ARFLAGS
 HOST_ARFLAGS = None
 cargo:rerun-if-env-changed=ARFLAGS
 ARFLAGS = None
-running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\lib.exe" "-out:c:\\Users\\TOM\\Zettlekasten\\Zettlekasten\\target\\debug\\build\\wepoll-ffi-c7e11f811dd5de07\\out\\libwepoll.a" "-nologo" "c:\\Users\\TOM\\Zettlekasten\\Zettlekasten\\target\\debug\\build\\wepoll-ffi-c7e11f811dd5de07\\out\\vendor/wepoll/wepoll.o"
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\lib.exe" "-out:c:\\Users\\tommyw\\Zettlekasten\\Zettlekasten\\target\\debug\\build\\wepoll-ffi-c7e11f811dd5de07\\out\\libwepoll.a" "-nologo" "c:\\Users\\tommyw\\Zettlekasten\\Zettlekasten\\target\\debug\\build\\wepoll-ffi-c7e11f811dd5de07\\out\\vendor/wepoll/wepoll.o"
 exit code: 0
 cargo:rustc-link-lib=static=wepoll
-cargo:rustc-link-search=native=c:\Users\TOM\Zettlekasten\Zettlekasten\target\debug\build\wepoll-ffi-c7e11f811dd5de07\out
+cargo:rustc-link-search=native=c:\Users\tommyw\Zettlekasten\Zettlekasten\target\debug\build\wepoll-ffi-c7e11f811dd5de07\out
