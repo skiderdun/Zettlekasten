@@ -98,6 +98,6 @@ impl RDB {
 // uses the sqlx crate
 
 use sqlx::MySql;
+use sqlx;
 
 // new database struct
->>>>>>> e4b66b40595adab65df13ad119a31a26d9d6bf69
