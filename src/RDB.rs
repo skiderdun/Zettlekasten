@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // relational database manager (RDB)
 // For now, it's just a wrapper around a HashMap
 // Later will be a wrapper around a SQLite database
@@ -91,3 +92,12 @@ impl RDB {
 
 
 
+=======
+// relational database manager (rdb)
+// uses MYSQL as the backend
+// uses the sqlx crate
+
+use sqlx::MySql;
+
+// new database struct
+>>>>>>> e4b66b40595adab65df13ad119a31a26d9d6bf69
