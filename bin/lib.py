@@ -7,22 +7,21 @@ import time
 import datetime
 
 # Function to label a file with the current date and time
-def label_file(file_name):
-    # Get current date and time
+def label_file():
+    # Get the current date and time
     now = datetime.datetime.now()
-    # Format date and time
-    date_time = now.strftime("%Y-%m-%d_%H-%M-%S")
-    # Split file name into name and extension
-    name, extension = os.path.splitext(file_name)
-    # Create new file name
-    new_file_name = name + "_" + date_time + extension
-    # Return new file name
-    return new_file_name
+    # Format the date and time
+    date_time = now.strftime("%Y-%m-%d-%H-%M-%S")
+    # Return the date and time
+    return date_time
 
-# Function to create a directory
-def create_dir(dir_name):
-    # Check if directory exists
-    if not os.path.exists(dir_name):
-        # Create directory
-        os.makedirs(dir_name)
-
+# Function to place a string in a new file in the ../Box directory with the current date and time
+def new_zettle(string):
+    # Get the current date and time
+    date_time = label_file()
+    # Create a new file in the ../Box directory with the current date and time
+    file = open('Box/' + date_time + ".txt", "w")
+    # Write the string to the file
+    file.write(string)
+    # Close the file
+    file.close()
